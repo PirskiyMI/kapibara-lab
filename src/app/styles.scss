@@ -14,3 +14,7 @@
 .main {
    flex: 1 1 auto;
 }
+
+.title {
+   @include section-title;
+}

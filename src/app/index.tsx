@@ -1,4 +1,5 @@
 import { TheFooter } from '../components/footer';
+import { Gallery } from '../components/gallery';
 import { TheHeader } from '../components/header';
 import { Hero } from '../components/hero';
 import { Introduction } from '../components/introduction';
@@ -13,6 +14,7 @@ export const App = () => {
             <Hero />
             <Introduction />
             <Laboratory />
+            <Gallery />
          </main>
          <TheFooter />
       </div>
