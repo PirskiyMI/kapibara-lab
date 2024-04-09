@@ -2,18 +2,11 @@
 @import './normalize.scss';
 
 body {
+   height: 100%;
    @include default-text();
    font-family: var(--font-family);
 }
 
-.wrapper {
-   display: flex;
-   flex-direction: column;
-}
-
-.container {
-   width: 100%;
-   max-width: 1436px;
-   margin: 0 auto;
-   padding: 0 18px;
+#root {
+   height: 100%;
 }

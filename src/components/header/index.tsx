@@ -4,7 +4,7 @@ import { HeaderContent } from './header-content';
 import { HeaderNav } from './header-nav';
 import { HeaderSocial } from './header-social';
 
-export const Header: FC = () => {
+export const TheHeader: FC = () => {
    return (
       <header className={styles.header}>
          <div className={`${styles.header__container} container`}>

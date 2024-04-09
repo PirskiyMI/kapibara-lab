@@ -7,5 +7,5 @@ interface Props {
 }
 
 export const Logo: FC<Props> = ({ type = 'default' }) => {
-   return <div>{type === 'default' ? <DefLogo /> : <AltLogo />}</div>;
+   return <>{type === 'default' ? <DefLogo /> : <AltLogo />}</>;
 };
