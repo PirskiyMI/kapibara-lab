@@ -1,0 +1,15 @@
+.field {
+   padding: 12px 16px;
+   border-radius: var(--border-r-default);
+   transition: border-color ease 0.2s;
+   @include field-border(transparent);
+   &::placeholder {
+      color: rgb(var(--color-gray));
+   }
+   &:focus {
+      @include field-border(rgb(var(--color-primary)));
+   }
+   &_error {
+      @include field-border(rgb(var(--color-danger)));
+   }
+}

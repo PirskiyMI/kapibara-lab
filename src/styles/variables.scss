@@ -1,8 +1,9 @@
 :root {
    --color-primary: 115, 123, 225;
    --color-accent: 233, 234, 249;
-   --color-dangerous: 225, 115, 115;
+   --color-danger: 225, 115, 115;
    --color-light: 255, 255, 255;
+   --color-gray: 160, 160, 160;
    --color-dark: 0, 0, 0;
 
    --bg-gradient: linear-gradient(0deg, rgb(233, 234, 249), rgb(245, 245, 255) 100%);
@@ -28,4 +29,6 @@
 
    --line-h-title-large: 123%;
    --line-h-title-default: 122%;
+
+   --border-r-default: 8px;
 }
