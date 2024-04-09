@@ -1,0 +1,50 @@
+.laboratory {
+   padding: 36px 0;
+   background: var(--bg-gradient);
+   &__container,
+   &__body,
+   &__content {
+      display: flex;
+   }
+   &__container,
+   &__body {
+      align-items: start;
+   }
+   &__body,
+   &__content {
+      flex-direction: column;
+   }
+   &__container {
+      justify-content: space-between;
+      column-gap: 10px;
+   }
+   &__body {
+      row-gap: 24px;
+   }
+   &__title {
+      @include section-title;
+   }
+   &__content {
+      row-gap: 18px;
+   }
+   &__image {
+      width: 100%;
+      max-width: 350px;
+      border-radius: var(--border-r-default);
+      &_desktop {
+         display: none;
+      }
+   }
+   @media (min-width: 900px) {
+      padding: 48px 0;
+      &__body {
+         row-gap: 36px;
+      }
+      &__image {
+         display: none;
+         &_desktop {
+            display: block;
+         }
+      }
+   }
+}
