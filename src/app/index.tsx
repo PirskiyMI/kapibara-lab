@@ -1,3 +1,4 @@
+import { Feedback } from '../components/feedback';
 import { TheFooter } from '../components/footer';
 import { Gallery } from '../components/gallery';
 import { TheHeader } from '../components/header';
@@ -15,6 +16,7 @@ export const App = () => {
             <Introduction />
             <Laboratory />
             <Gallery />
+            <Feedback />
          </main>
          <TheFooter />
       </div>
