@@ -1,0 +1,35 @@
+@mixin field-border($color) {
+   border: 2px solid rgb($color);
+}
+
+@mixin label-text() {
+   font-size: var(--font-s-large);
+   font-weight: var(--font-w-bolder);
+   font-style: italic;
+   line-height: 1px;
+}
+
+@mixin default-text() {
+   font-size: var(--font-s-default);
+   font-weight: var(--font-w-default);
+   line-height: var(--line-h-text-default);
+}
+
+@mixin accent-text() {
+   font-size: var(--font-s-large);
+   font-weight: var(--font-w-bolder);
+   line-height: var(--line-h-text-default);
+}
+
+@mixin main-title($color) {
+   font-size: var(--font-s-title);
+   font-weight: var(--font-w-boldest);
+   line-height: var(--line-h-title-large);
+   color: rgb($color);
+}
+
+@mixin section-title() {
+   font-size: var(--font-s-section-title);
+   font-weight: var(--font-w-bolder);
+   line-height: var(--line-h-title-default);
+}

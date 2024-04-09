@@ -1,0 +1,31 @@
+:root {
+   --color-primary: 115, 123, 225;
+   --color-accent: 233, 234, 249;
+   --color-dangerous: 225, 115, 115;
+   --color-light: 255, 255, 255;
+   --color-dark: 0, 0, 0;
+
+   --bg-gradient: linear-gradient(0deg, rgb(233, 234, 249), rgb(245, 245, 255) 100%);
+
+   --font-family: 'Montserrat', sans-serif;
+
+   --font-s-large: 24px;
+   --font-s-default: 21px;
+   --font-s-small: 18px;
+   --font-s-smaller: 16px;
+   --font-s-smallest: 14px;
+
+   --font-s-title: 48px;
+   --font-s-section-title: 36px;
+
+   --font-w-boldest: 700;
+   --font-w-bolder: 600;
+   --font-w-bold: 500;
+   --font-w-default: 400;
+
+   --line-h-text-default: 140%;
+   --line-h-text-small: 130%;
+
+   --line-h-title-large: 123%;
+   --line-h-title-default: 122%;
+}

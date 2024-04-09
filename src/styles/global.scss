@@ -1,0 +1,7 @@
+@import './mixins.scss';
+@import './variables.scss';
+@import './normalize.scss';
+
+body {
+   @include default-text();
+}
