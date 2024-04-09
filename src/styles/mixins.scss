@@ -6,7 +6,9 @@
    font-size: var(--font-s-large);
    font-weight: var(--font-w-bolder);
    font-style: italic;
-   line-height: 1px;
+   @media (max-width: 900px) {
+      font-size: var(--font-s-default);
+   }
 }
 
 @mixin default-text {
