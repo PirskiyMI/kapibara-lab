@@ -1,0 +1,39 @@
+.hero {
+   background: url('./assets/background.jpeg') no-repeat center/2132px;
+   &__container {
+      height: 560px;
+      padding-top: 210px;
+      position: relative;
+   }
+   &__image {
+      position: absolute;
+      bottom: 0px;
+      right: 125px;
+   }
+   @media (max-width: 1060px) {
+      &__image {
+         right: 0px;
+      }
+   }
+   @media (max-width: 900px) {
+      &__container {
+         height: 243px;
+      }
+      &__title {
+         position: absolute;
+         bottom: 0px;
+         margin-bottom: -45px;
+         z-index: 1;
+      }
+      &__image {
+         width: 170px;
+         height: 228px;
+      }
+   }
+   @media (max-width: 430px) {
+      &__image {
+         right: 50%;
+         transform: translate(50%);
+      }
+   }
+}
