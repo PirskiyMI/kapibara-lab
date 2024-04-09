@@ -1,0 +1,33 @@
+.nav {
+   display: none;
+   &__list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+   }
+   &__link {
+      padding: 8px 10px;
+      border-radius: var(--border-r-default);
+      transition: background-color ease 0.2s, color ease 0.2s;
+      @include small-text;
+      @media (any-hover: hover) {
+         &:hover {
+            color: rgba(var(--color-primary));
+            background-color: rgba(var(--color-accent));
+         }
+      }
+   }
+   @media (min-width: 1280px) {
+      &__list {
+         column-gap: 24px;
+      }
+      &__link {
+         padding: 8px 24px;
+         font-size: var(--font-s-smaller);
+      }
+   }
+   @media (min-width: 900px) {
+      display: block;
+   }
+}

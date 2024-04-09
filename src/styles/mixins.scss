@@ -15,6 +15,12 @@
    line-height: var(--line-h-text-default);
 }
 
+@mixin small-text {
+   font-size: var(--font-s-small);
+   font-weight: var(--font-w-bold);
+   line-height: var(--line-h-text-small);
+}
+
 @mixin accent-text {
    font-size: var(--font-s-large);
    font-weight: var(--font-w-bolder);
