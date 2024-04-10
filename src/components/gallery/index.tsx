@@ -10,7 +10,7 @@ import styles from './styles.module.scss';
 
 export const Gallery: FC = () => {
    return (
-      <section className={styles.gallery}>
+      <section id='gallery' className={styles.gallery}>
          <div className="container">
             <h3 className={`${styles.gallery__title} title`}>Галерея</h3>
             <div className={styles.gallery__grid}>

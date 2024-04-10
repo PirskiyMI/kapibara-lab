@@ -5,7 +5,7 @@ import CapybaraImage from './assets/capybara-scientist.jpeg';
 
 export const Laboratory: FC = () => {
    return (
-      <section className={styles.laboratory}>
+      <section id="laboratory" className={styles.laboratory}>
          <div className={`${styles.laboratory__container} container`}>
             <div className={styles.laboratory__body}>
                <h3 className={styles.laboratory__title}>Лаборатория</h3>
@@ -25,7 +25,7 @@ export const Laboratory: FC = () => {
                      надежность результатов.
                   </p>
                </div>
-               <MyButton title="Оставить заявку" />
+               <MyButton type="link" href="#feedback" title="Оставить заявку" />
             </div>
             <img
                src={CapybaraImage}

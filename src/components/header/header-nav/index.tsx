@@ -6,17 +6,17 @@ export const HeaderNav: FC = () => {
       <nav className={styles.nav}>
          <ul className={styles.nav__list}>
             <li className={styles.nav__item}>
-               <a href="#" className={styles.nav__link}>
+               <a href="#laboratory" className={styles.nav__link}>
                   Лаборатория
                </a>
             </li>
             <li className={styles.nav__item}>
-               <a href="#" className={styles.nav__link}>
+               <a href="#gallery" className={styles.nav__link}>
                   Галерея
                </a>
             </li>
             <li className={styles.nav__item}>
-               <a href="#" className={styles.nav__link}>
+               <a href="#feedback" className={styles.nav__link}>
                   Оставить заявку
                </a>
             </li>

@@ -4,7 +4,7 @@ import { FeedbackForm } from './feedback-form';
 
 export const Feedback: FC = () => {
    return (
-      <section className={styles.feedback}>
+      <section id="feedback" className={styles.feedback}>
          <div className={`${styles.feedback__container} container`}>
             <div className={styles.feedback__wrapper}>
                <h3 className="title">Заявка на диагностику</h3>
