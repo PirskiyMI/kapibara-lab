@@ -3,12 +3,13 @@ import { FC } from 'react';
 import { MyButton } from 'src/components/ui/my-button';
 import ArrowIcon from 'src/assets/icons/arrow-icon.svg?react';
 import CapybaraImage from 'src/assets/images/capybara-scientist.jpeg';
+import { anchor } from 'src/constant/anchors';
 
 import styles from './styles.module.scss';
 
 export const Laboratory: FC = () => {
    return (
-      <section id="laboratory" className={styles.laboratory}>
+      <section id={anchor.laboratory} className={styles.laboratory}>
          <div className={`${styles.laboratory__container} container`}>
             <div className={styles.laboratory__body}>
                <h3 className={styles.laboratory__title}>Лаборатория</h3>

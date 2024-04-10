@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import CapybaraImage from 'src/assets/images/capybara.svg';
+import capybaraImage from 'src/assets/images/capybara.png';
 
 import styles from './styles.module.scss';
 import { HeroTitle } from './hero-title';
@@ -11,7 +11,7 @@ export const Hero: FC = () => {
          <div className={`${styles.hero__container} container`}>
             <HeroTitle className={styles.hero__title} />
             <img
-               src={CapybaraImage}
+               src={capybaraImage}
                alt="Изображение ученого-капибары"
                className={styles.hero__image}
             />

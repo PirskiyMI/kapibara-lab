@@ -1,11 +1,13 @@
 import { FC } from 'react';
 
+import { anchor } from 'src/constant/anchors';
+
 import styles from './styles.module.scss';
 import { FeedbackForm } from './feedback-form';
 
 export const Feedback: FC = () => {
    return (
-      <section id="feedback" className={styles.feedback}>
+      <section id={anchor.feedback} className={styles.feedback}>
          <div className={`${styles.feedback__container} container`}>
             <div className={styles.feedback__wrapper}>
                <h3 className="title">Заявка на диагностику</h3>
