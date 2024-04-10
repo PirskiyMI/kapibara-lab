@@ -1,0 +1,1 @@
+import{j as p}from"./index-C1iYuDeY.js";const n="_popup_1vesa_1",u="_popup__body_1vesa_10",o={popup:n,popup__body:u},c=({children:s,closePopup:_})=>p.jsx("div",{className:o.popup,onClick:_,children:p.jsx("div",{className:o.popup__body,onClick:t=>{t.stopPropagation()},children:s})});export{c as PopUp};
