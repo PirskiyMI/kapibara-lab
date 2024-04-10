@@ -1,7 +1,10 @@
 import { FC } from 'react';
+
+import { MyButton } from 'src/components/ui/my-button';
+import ArrowIcon from 'src/assets/icons/arrow-icon.svg?react';
+import CapybaraImage from 'src/assets/images/capybara-scientist.jpeg';
+
 import styles from './styles.module.scss';
-import { MyButton } from '../ui/my-button';
-import CapybaraImage from './assets/capybara-scientist.jpeg';
 
 export const Laboratory: FC = () => {
    return (
@@ -25,7 +28,10 @@ export const Laboratory: FC = () => {
                      надежность результатов.
                   </p>
                </div>
-               <MyButton type="link" href="#feedback" title="Оставить заявку" />
+               <MyButton href="#feedback" className={styles.laboratory__link}>
+                  <span>Оставить заявку</span>
+                  <ArrowIcon className={styles.laboratory__icon} />
+               </MyButton>
             </div>
             <img
                src={CapybaraImage}

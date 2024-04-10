@@ -1,5 +1,5 @@
 .footer {
-   margin-top: 30px;
+   margin-top: var(--space-between-sections);
    padding: 24px 0;
    color: rgb(var(--color-light));
    background-color: rgb(var(--color-secondary));
@@ -15,7 +15,7 @@
       line-height: var(--line-h-text-small);
    }
    @media (min-width: 900px) {
-      margin-top: 96px;
+      margin-top: 95px;
       padding: 60px 0;
       &__container {
          flex-direction: row-reverse;
@@ -23,6 +23,11 @@
       }
       &__copyright {
          font-size: var(--font-s-smaller);
+      }
+   }
+   @media (max-width: 900px) {
+      &__logo {
+         max-width: 150px;
       }
    }
 }

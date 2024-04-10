@@ -1,14 +1,18 @@
 .hero {
-   background: url('./assets/background.jpeg') no-repeat center/2132px;
+   background: url('./../../../assets/images/background.jpeg') no-repeat center/2132px;
    & &__container {
       height: 560px;
       padding-top: 210px;
       position: relative;
    }
+   &__title {
+      position: relative;
+      z-index: 1;
+   }
    &__image {
       position: absolute;
       bottom: 0px;
-      right: 125px;
+      right: 143px;
    }
    @media (max-width: 1060px) {
       &__image {
@@ -18,12 +22,12 @@
    @media (max-width: 900px) {
       & &__container {
          height: 243px;
+         display: flex;
       }
       &__title {
          position: absolute;
          bottom: 0px;
          margin-bottom: -45px;
-         z-index: 1;
       }
       &__image {
          width: 170px;

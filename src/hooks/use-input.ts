@@ -1,23 +1,24 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useCallback, useState } from 'react';
 
-const reg = new RegExp(/[^a-zA-Za-яА-ЯёЁ]/g);
-
-export const useInput = () => {
+export const useInput = (regExp?: RegExp) => {
    const [value, setValue] = useState('');
    const [isVisited, setIsVisited] = useState(false);
 
-   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
-      setValue(e.target.value.replace(reg, ''));
-   };
+   const onChange = useCallback(
+      (e: ChangeEvent<HTMLInputElement>) => {
+         regExp ? setValue(e.target.value.replace(regExp, '')) : setValue(e.target.value);
+      },
+      [regExp],
+   );
 
-   const onBlur = () => {
+   const onBlur = useCallback(() => {
       setIsVisited(true);
-   };
+   }, []);
 
-   const clearInput = () => {
+   const clearInput = useCallback(() => {
       setValue('');
       setIsVisited(false);
-   };
+   }, []);
 
    return { value, isVisited, onChange, onBlur, clearInput };
 };

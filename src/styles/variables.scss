@@ -32,6 +32,7 @@
    --line-h-title-default: 122%;
 
    --border-r-default: 8px;
+   --space-between-sections: 96px;
 
    @media (max-width: 900px) {
       --font-s-default: 18px;
@@ -40,5 +41,6 @@
       --font-s-section-title: 28px;
 
       --line-h-title-default: 121%;
+      --space-between-sections: 30px;
    }
 }

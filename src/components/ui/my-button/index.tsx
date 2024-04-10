@@ -1,30 +1,30 @@
-import { FC, HTMLAttributes, ReactNode } from 'react';
+import { FC, HTMLAttributes, ReactNode, memo } from 'react';
+
+import { getClasses } from 'src/helpers/get-classes';
+
 import styles from './styles.module.scss';
-import { getClasses } from '../../../helpers/get-classes';
 
 interface Props extends HTMLAttributes<HTMLButtonElement> {
-   title: string;
-   type?: 'button' | 'link';
+   children: ReactNode;
+   className?: string;
    href?: string;
    disabled?: boolean;
-   className?: string;
-   icon?: ReactNode;
 }
 
-export const MyButton: FC<Props> = ({
-   title,
-   type = 'button',
-   href,
-   className,
-   icon,
-   ...props
-}) => {
+export const MyButton: FC<Props> = memo(({ children, href, className, ...props }) => {
    const classes = getClasses({ mainClassName: styles.button, className });
 
    return (
-      <button className={classes} {...props}>
-         <span>{type === 'link' ? <a href={href}>{title}</a> : title}</span>
-         {icon && <span>{icon}</span>}
-      </button>
+      <>
+         {!href ? (
+            <button className={classes} {...props}>
+               {children}
+            </button>
+         ) : (
+            <a href={href} className={classes}>
+               {children}
+            </a>
+         )}
+      </>
    );
-};
+});

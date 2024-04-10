@@ -1,9 +1,11 @@
 .laboratory {
+   margin-top: var(--space-between-sections);
    padding: 36px 0;
    background: var(--bg-gradient);
    &__container,
    &__body,
-   &__content {
+   &__content,
+   &__link {
       display: flex;
    }
    &__container,
@@ -27,9 +29,14 @@
    &__content {
       row-gap: 18px;
    }
+   & &__link {
+      align-items: center;
+      column-gap: 10px;
+      color: rgb(var(--color-light));
+   }
    &__image {
       width: 100%;
-      max-width: 350px;
+      max-width: 332px;
       border-radius: var(--border-r-default);
       &_desktop {
          display: none;
@@ -38,6 +45,7 @@
    @media (min-width: 900px) {
       padding: 48px 0;
       &__body {
+         max-width: 1020px;
          row-gap: 36px;
       }
       &__image {

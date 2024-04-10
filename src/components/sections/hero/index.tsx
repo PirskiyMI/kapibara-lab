@@ -1,7 +1,9 @@
 import { FC } from 'react';
+
+import CapybaraImage from 'src/assets/images/capybara.svg';
+
 import styles from './styles.module.scss';
 import { HeroTitle } from './hero-title';
-import CapybaraImage from './assets/capybara.svg';
 
 export const Hero: FC = () => {
    return (

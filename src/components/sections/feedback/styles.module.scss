@@ -1,5 +1,5 @@
 .feedback {
-   margin-top: 96px;
+   margin-top: var(--space-between-sections);
    text-align: center;
    &__wrapper {
       padding: 48px 10px;

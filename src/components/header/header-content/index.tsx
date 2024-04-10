@@ -1,5 +1,7 @@
 import { FC } from 'react';
-import { Logo } from '../../ui/logo';
+
+import { Logo } from 'src/components/ui/logo';
+
 import styles from './styles.module.scss';
 
 export const HeaderContent: FC = () => {

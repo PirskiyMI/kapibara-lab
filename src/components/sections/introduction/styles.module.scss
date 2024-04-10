@@ -1,8 +1,8 @@
 .intro {
-   padding: 96px 0px;
+   margin-top: var(--space-between-sections);
    text-align: center;
    @include label-text;
    @media (max-width: 900px) {
-      padding: 75px 0px 30px;
+      margin-top: 75px;
    }
 }

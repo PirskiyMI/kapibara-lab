@@ -1,5 +1,5 @@
 .gallery {
-   margin-top: 96px;
+   margin-top: var(--space-between-sections);
    &__title {
       margin-bottom: 48px;
    }
@@ -39,7 +39,6 @@
       }
    }
    @media (max-width: 900px) {
-      margin-top: 30px;
       &__title {
          margin-bottom: 24px;
       }

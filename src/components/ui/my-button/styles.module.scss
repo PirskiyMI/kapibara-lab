@@ -1,10 +1,18 @@
 .button {
    padding: 12px 18px;
    display: flex;
+   align-items: center;
+   column-gap: 10px;
    color: rgb(var(--color-light));
    background-color: rgb(var(--color-primary));
    border-radius: var(--border-r-default);
+   transition: background-color ease 0.2s;
    &:disabled {
       opacity: 0.7;
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: rgb(var(--color-secondary));
+      }
    }
 }

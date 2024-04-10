@@ -1,10 +1,11 @@
-import { Feedback } from '../components/feedback';
-import { TheFooter } from '../components/footer';
-import { Gallery } from '../components/gallery';
-import { TheHeader } from '../components/header';
-import { Hero } from '../components/hero';
-import { Introduction } from '../components/introduction';
-import { Laboratory } from '../components/laboratory';
+import { TheFooter } from 'src/components/footer';
+import { TheHeader } from 'src/components/header';
+import { Feedback } from 'src/components/sections/feedback';
+import { Gallery } from 'src/components/sections/gallery';
+import { Hero } from 'src/components/sections/hero';
+import { Introduction } from 'src/components/sections/introduction';
+import { Laboratory } from 'src/components/sections/laboratory';
+
 import './styles.scss';
 
 export const App = () => {

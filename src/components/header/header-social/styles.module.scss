@@ -1,9 +1,4 @@
 .tel {
-   display: flex;
-   align-items: center;
-   column-gap: 8px;
-   @include small-text;
-   font-weight: var(--font-w-bolder);
    &__body {
       display: none;
    }
@@ -12,6 +7,12 @@
       height: 32px;
    }
    @media (min-width: 900px) {
+      display: flex;
+      align-items: center;
+      column-gap: 14px;
+      @include small-text;
+      font-weight: var(--font-w-bolder);
+
       &__body {
          display: flex;
          flex-direction: column;
@@ -21,6 +22,7 @@
          height: 18px;
          font-size: var(--font-s-smallest);
          font-weight: var(--font-w-default);
+         line-height: var(--line-h-text-small);
       }
    }
 }

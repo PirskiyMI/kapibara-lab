@@ -6,6 +6,7 @@
    font-size: var(--font-s-large);
    font-weight: var(--font-w-bolder);
    font-style: italic;
+   line-height: var(--line-h-text-default);
    @media (max-width: 900px) {
       font-size: var(--font-s-default);
    }

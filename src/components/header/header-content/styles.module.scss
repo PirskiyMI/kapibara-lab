@@ -4,6 +4,7 @@
       line-height: var(--line-h-text-small);
    }
    @media (min-width: 1280px) {
+      flex: 0 0 397px;
       display: flex;
       align-items: center;
       column-gap: 24px;
